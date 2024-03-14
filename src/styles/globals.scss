@@ -22,9 +22,13 @@ html{
 }
 body{
 	height: 100dvh;
+  max-height: 100dvh;
 	overflow-x: hidden;
   background: #000;
   font-size: 16px;
+}
+main{
+  height: 150vh !important;
 }
 #__next{
   min-height: 100vh;
