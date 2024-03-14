@@ -21,7 +21,7 @@ html{
   font-size: 16px;
 }
 body{
-	min-height: 100dvh;
+	min-height: 100vh;
 	overflow-x: hidden;
   background: #000;
   font-size: 16px;
@@ -30,7 +30,7 @@ main{
   height: 150vh !important;
 }
 #__next{
-  min-height: 100dvh;
+  min-height: 100vh;
 }
 .container{
   @include res("width", 1170px);
