@@ -1,0 +1,111 @@
+@import "@/styles/mixins.scss";
+.intro{
+    height: 100dvh;
+    background: url('../../../public/bg.png') center / cover no-repeat;
+    isolation: isolate;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        z-index: -1;
+        background: rgba(#000, 0.8);
+        @include res("width", 1100px);
+        @include media(575){
+            width: 100%;
+        }
+    }
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    @include media(575){
+        flex-direction: column;
+        @include resa("gap", 40px);
+        align-items: flex-start;
+    }
+}
+.lang{
+    @include res("margin-right", 64px);
+    @include res("gap", 40px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include media(575){
+        display: none;
+    }
+    &Btn{
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: #fff;
+        @include res("font-size", 24px);
+        font-weight: 400;
+        text-transform: uppercase;
+        &.active{
+            color: #FFA800;
+        }
+    }
+    .hr{
+        @include res("height", 40px);
+        @include res("width", 2px);
+        background: #fff;
+    }
+}
+.content{
+    @include res("max-width", 580px);
+    @include res("min-width", 580px);
+    @include media(575){
+        @include resa("max-width", 393px);
+        @include resa("width", 393px);
+    }
+}
+.title{
+    font-weight: 500;
+    text-transform: uppercase;
+    @include res("font-size", 64px);
+    @include res("letter-spacing", 12px);
+    @include res("margin-bottom", 25px);
+    @include media(575){
+        @include resa("font-size", 48px);
+        @include resa("letter-spacing", 8px);
+        @include resa("margin-bottom", 25px);
+    }
+}
+.desc{
+    @include res("font-size", 24px);
+    font-weight: 400;
+    line-height: 140%;
+    @include media(575){
+        @include resa("font-size", 20px);
+    }
+}
+.btn{
+    @include res("width", 360px);
+    @include res("font-size", 24px);
+    margin-left: 0 !important;
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #FFA800;
+    display: block;
+    @include media(575){
+        @include resa("width", 224px);
+        @include resa("height", 50px);
+        @include resa("font-size", 18px);
+        text-decoration: none;
+        font-weight: 500;
+        background: #FFA800;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
