@@ -1,0 +1,262 @@
+@import "@/styles/mixins.scss";
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    @include res("height", 80px);
+    @include res("top", 38px);
+    @include media(575){
+        @include resa("height", 53.33px);
+        @include resa("top", 15px);
+    }
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    @include res("width", 60px);
+    @include res("height", 80px);
+    line-height: 0;
+    @include media(575){
+        @include resa("width", 40px);
+        @include resa("height", 53.33px);
+    }
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.li{
+    line-height: 0;
+}
+.left{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    @include res("gap", 40px);
+}
+.list{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    list-style-type: none;
+    @include res("gap", 20px);
+    @include media(575){
+        display: none;
+    }
+}
+.link{
+    @include res("font-size", 20px);
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+}
+.tel{
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    @include res("font-size", 20px);
+    @include res("gap", 10px);
+    @include media(575){
+        display: none;
+        @include resa("font-size", 18px);
+        @include resa("gap", 10px);
+    }
+    &Svg{
+        @include res("width", 30px);
+        @include res("height", 30px);
+        @include media(575){
+            @include resa("width", 30px);
+            @include resa("height", 30px);
+        }
+        line-height: 0;
+        svg{
+            @include res("width", 30px);
+            @include res("height", 30px);
+            @include media(575){
+                @include resa("width", 30px);
+                @include resa("height", 30px);
+            }
+        }
+    }
+    a{
+        color: #fff;
+        text-decoration: none;
+    }
+}
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    @include res("gap", 50px);
+    @include media(575){
+        @include resa("gap", 25px);
+    }
+}
+.drop{
+    position: relative;
+    &Btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: none;
+        border: none;
+        padding: 0;
+        color: #fff;
+        @include res("gap", 4px);
+        @include res("font-size", 20px);
+        text-transform: uppercase;
+        @include media(575){
+            @include resa("gap", 4px);
+            @include resa("font-size", 20px);
+        }
+        svg{
+            @include res("width", 15px);
+            @include res("height", 15px);
+            @include media(575){
+                @include resa("width", 15px);
+                @include resa("height", 15px);
+            }
+        }
+    }
+    &Content{
+        position: absolute;
+        @include res("top", 30px);
+        border: solid #fff;
+        @include res("border-width", 1px);
+        background: #ffffff10;
+        display: flex;
+        flex-direction: column;
+        transition: 300ms ease;
+        opacity: 0;
+        visibility: hidden;
+        @include res("width", 50px);
+        @include media(575){
+            @include resa("top", 30px);
+            @include resa("border-width", 1px);
+            @include resa("width", 50px);
+        }
+        &.active{
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    &Link{
+        background: none;
+        border: none;
+        color: #fff;
+        text-align: left;
+        text-transform: uppercase;
+        transition: 300ms ease;
+        @include res("font-size", 16px);
+        @include res("padding-left", 8px);
+        @include res("padding-right", 8px);
+        @include res("padding-top", 4px);
+        @include res("padding-bottom", 4px);
+        @include media(575){
+            @include resa("font-size", 16px);
+            @include resa("padding-left", 8px);
+            @include resa("padding-right", 8px);
+            @include resa("padding-top", 4px);
+            @include resa("padding-bottom", 4px);
+        }
+        &:hover{
+            background: #FFA800;
+        }
+    }
+}
+.menu{
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    background: #000;
+    height: 100%;
+    z-index: 500;
+    @include media(575){
+        display: block;
+        @include resa("width", 300px);
+        transform: translateX(100%);
+        transition: 300ms ease;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        @include resa("padding-top", 30px);
+        @include resa("padding-right", 30px);
+        &.active{
+            transform: translateX(0);
+        }
+    }
+    &Overlay{
+        position: fixed;
+        top: -5%;
+        left: -5%;
+        width: 110%;
+        height: 110%;
+        z-index: 499;
+        background: #ffffff20;
+        backdrop-filter: blur(10px);
+        transition: 300ms ease;
+        opacity: 0;
+        visibility: hidden;
+        &.active{
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    &Btn{
+        background: none;
+        border: none;
+        display: none;
+        cursor: pointer;
+        @include media(575){
+            display: block;
+            position: relative;
+            @include resa("width", 40px);
+            @include resa("min-width", 40px);
+            @include resa("height", 26.35px);
+            div,
+            &::before,
+            &::after{
+                position: absolute;
+                left: 0;
+                width: 100%;
+                background: #fff;
+                @include resa("height", 2px);
+            }
+            &::before{
+                content: '';
+                top: 0;
+            }
+            &::after{
+                content: '';
+                bottom: 0;
+            }
+            div{
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+    .list{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        @include resa("padding-top", 50px);
+        @include resa("gap", 30px);
+    }
+    .link{
+        @include resa("font-size", 20px);
+        line-height: 140%;
+    }
+    .tel{
+        margin-top: auto;
+        display: flex;
+        @include resa("padding-bottom", 30px);
+    }
+}

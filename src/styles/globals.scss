@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import './mixins.scss';
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   &:focus,
   &:active{
     outline: none;
@@ -16,7 +17,26 @@
     box-sizing: border-box;
   }
 }
+html{
+  font-size: 16px;
+}
 body{
 	height: 100dvh;
-	overflow: hidden;
+	overflow-x: hidden;
+  background: #000;
+  font-size: 16px;
+}
+#__next{
+  min-height: 100vh;
+}
+.container{
+  @include res("width", 1170px);
+  margin-left: auto;
+  margin-right: auto;
+  @include media(575){
+    @include resa("width", 400px);
+  }
+}
+button{
+  cursor: pointer;
 }
