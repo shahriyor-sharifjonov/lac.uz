@@ -31,7 +31,8 @@ main{
   height: 150vh !important;
 }
 #__next{
-  min-height: 100vh;
+  height: 100dvh;
+  overflow-y: auto;
 }
 .container{
   @include res("width", 1170px);
