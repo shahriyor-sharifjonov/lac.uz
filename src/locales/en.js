@@ -20,6 +20,9 @@ const en = {
     "services7": "Protection of principals' interests at all stages of criminal proceedings",
     "services8": "Representation of principals' interests in disputes with state bodies in administrative courts",
     "services9": "Comprehensive tax and audit support",
+    "contactsTitle": "<span>Contacts</span>",
+    "contactsBtn": "Open in Yandex navigator",
+    "contactsLoc": "Alisher Navoiy 14"
 }
 
 export default en

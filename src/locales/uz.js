@@ -20,6 +20,9 @@ const uz = {
     "services7": "Jinoyat jarayonlarining barcha bosqichlarida ishonchlarning huvoyasini himoya qilish",
     "services8": "Hukumat organlari bilan munosabatlarda ishonchlarning huvoyasini ijro etish",
     "services9": "Kompleks soliq va auditrlik qo‘llab-quvvat",
+    "contactsTitle": "<span>Kontaktlar</span>",
+    "contactsBtn": "Yandex navigatorda ochish",
+    "contactsLoc": "Алишера Навои 14"
 }
 
 export default uz
