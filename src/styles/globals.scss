@@ -22,6 +22,8 @@ html{
 }
 body{
 	min-height: 100vh;
+  width: 100%;
+  max-width: 100%;
 	overflow-x: hidden;
   background: #000;
   font-size: 16px;
@@ -31,6 +33,9 @@ main{
 }
 #__next{
   min-height: 100vh;
+  width: 100%;
+  max-width: 100%;
+	overflow-x: hidden;
 }
 .container{
   @include res("width", 1170px);

@@ -28,7 +28,7 @@ const Footer = () => {
                         <Link href="#" className={styles.link}>{t.contactsLink}</Link>
                     </div>
                 </div>
-                <Link href="https://bit.ly/shahriyorweb" target="_blank" className={`${styles.link} ${styles.copy}`}>Разработка сайтов</Link>
+                <Link href="https://bit.ly/shahriyorweb" target="_blank" className={`${styles.link} ${styles.copy}`}>{t.footerCopy}</Link>
             </div>
         </footer>
     )
