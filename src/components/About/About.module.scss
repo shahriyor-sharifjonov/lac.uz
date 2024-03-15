@@ -12,10 +12,17 @@
         border-radius: 50%;
         background: rgba(#FFA800, .42);
         filter: blur(30vw);
+        z-index: -1;
         @include res("filter", 300px);
         @include res("right", -250px);
         @include res("width", 500px);
         @include res("height", 500px);
+        @include media(575){
+            @include resa("right", -250px);
+            @include resa("width", 500px);
+            @include resa("height", 500px);
+            filter: blur(70vw);
+        }
     }
     @include media(575){
         @include resa("padding-top", 100px);
