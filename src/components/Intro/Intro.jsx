@@ -24,7 +24,7 @@ const Intro = () => {
     }, [locale])
 
     return (
-        <section className={styles.intro}>
+        <section className={styles.intro} id="intro">
             <div className={`container ${styles.container}`}>
                 <div className={styles.lang}>
                     <button type="button" className={`${styles.langBtn} ${locale === "ru" && styles.active}`} onClick={(e) => {changeLanguage(e);}}>ru</button>
@@ -36,7 +36,7 @@ const Intro = () => {
                     <h1 className={styles.title}>{t.introTitle}</h1>
                     <p className={styles.desc}>{t.introDesc}</p>
                 </div>
-                <Link href="#" className={styles.btn} style={{ marginLeft: `calc(${-width/2}px + 10vw)` }}>{t.introBtn}</Link>
+                <Link href="#callback" className={styles.btn} style={{ marginLeft: `calc(${-width/2}px + 10vw)` }}>{t.introBtn}</Link>
             </div>
         </section>
     )

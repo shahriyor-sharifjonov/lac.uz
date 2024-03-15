@@ -15,7 +15,7 @@ const Services = () => {
     const t = locale === 'ru' ? ru : (locale === 'uz' ? uz : en)
 
     return (
-        <section className={styles.services}>
+        <section className={styles.services} id="services">
             <div className={`${styles.container} container`}>
                 <h2 className={`${styles.title} title`} dangerouslySetInnerHTML={{ __html: t.servicesTitle }}></h2>
                 <div className={styles.content}>

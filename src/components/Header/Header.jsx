@@ -28,10 +28,10 @@ const Header = () => {
                         <Image src="/logo.svg" width={60} height={80} alt="" draggable={false}></Image>
                     </div>
                     <div className={styles.list}>
-                        <Link href="#" className={styles.link}>{t.aboutLink}</Link>
-                        <Link href="#" className={styles.link}>{t.servicesLink}</Link>
-                        <Link href="#" className={styles.link}>{t.callbackLink}</Link>
-                        <Link href="#" className={styles.link}>{t.contactsLink}</Link>
+                        <Link href="#about" className={styles.link}>{t.aboutLink}</Link>
+                        <Link href="#services" className={styles.link}>{t.servicesLink}</Link>
+                        <Link href="#callback" className={styles.link}>{t.callbackLink}</Link>
+                        <Link href="#contacts" className={styles.link}>{t.contactsLink}</Link>
                     </div>
                 </div>
                 <div className={styles.right}>
@@ -73,10 +73,10 @@ const Header = () => {
                     <Image src="/logo.svg" width={60} height={80} alt="" draggable={false}></Image>
                 </div>
                 <div className={styles.list}>
-                    <Link href="#" className={styles.link} onClick={()=>{setMenuOpen(!menuOpen)}}>{t.aboutLink}</Link>
-                    <Link href="#" className={styles.link} onClick={()=>{setMenuOpen(!menuOpen)}}>{t.servicesLink}</Link>
-                    <Link href="#" className={styles.link} onClick={()=>{setMenuOpen(!menuOpen)}}>{t.callbackLink}</Link>
-                    <Link href="#" className={styles.link} onClick={()=>{setMenuOpen(!menuOpen)}}>{t.contactsLink}</Link>
+                    <Link href="#about" className={styles.link} onClick={()=>{setMenuOpen(!menuOpen)}}>{t.aboutLink}</Link>
+                    <Link href="#services" className={styles.link} onClick={()=>{setMenuOpen(!menuOpen)}}>{t.servicesLink}</Link>
+                    <Link href="#callback" className={styles.link} onClick={()=>{setMenuOpen(!menuOpen)}}>{t.callbackLink}</Link>
+                    <Link href="#contacts" className={styles.link} onClick={()=>{setMenuOpen(!menuOpen)}}>{t.contactsLink}</Link>
                 </div>
                 <div className={styles.tel}>
                     <Link href="tel:+998712418000" className={styles.telSvg}>

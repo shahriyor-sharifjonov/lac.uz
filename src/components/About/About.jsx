@@ -12,7 +12,7 @@ const About = () => {
     const { locale } = router
     const t = locale === 'ru' ? ru : (locale === 'uz' ? uz : en);
     return (
-        <section className={styles.about}>
+        <section className={styles.about} id="about">
             <div className={`${styles.container} container`}>
                 <h2 className={`${styles.title} title`} dangerouslySetInnerHTML={{ __html: t.aboutTitle }}></h2>
                 <p className={styles.p}>{t.aboutText}</p>
