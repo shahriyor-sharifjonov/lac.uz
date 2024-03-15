@@ -17,7 +17,45 @@ const Services = () => {
     return (
         <section className={styles.services}>
             <div className={`${styles.container} container`}>
-                
+                <h2 className={`${styles.title} title`} dangerouslySetInnerHTML={{ __html: t.servicesTitle }}></h2>
+                <div className={styles.content}>
+                    <div className={styles.item}>
+                        <p className={styles.itemTitle}>{t.services1}</p>
+                        <Link href="#callback" className={styles.itemBtn}>{t.servicesBtn}</Link>
+                    </div>
+                    <div className={styles.item}>
+                        <p className={styles.itemTitle}>{t.services2}</p>
+                        <Link href="#callback" className={styles.itemBtn}>{t.servicesBtn}</Link>
+                    </div>
+                    <div className={styles.item}>
+                        <p className={styles.itemTitle}>{t.services3}</p>
+                        <Link href="#callback" className={styles.itemBtn}>{t.servicesBtn}</Link>
+                    </div>
+                    <div className={styles.item}>
+                        <p className={styles.itemTitle}>{t.services4}</p>
+                        <Link href="#callback" className={styles.itemBtn}>{t.servicesBtn}</Link>
+                    </div>
+                    <div className={styles.item}>
+                        <p className={styles.itemTitle}>{t.services5}</p>
+                        <Link href="#callback" className={styles.itemBtn}>{t.servicesBtn}</Link>
+                    </div>
+                    <div className={styles.item}>
+                        <p className={styles.itemTitle}>{t.services6}</p>
+                        <Link href="#callback" className={styles.itemBtn}>{t.servicesBtn}</Link>
+                    </div>
+                    <div className={styles.item}>
+                        <p className={styles.itemTitle}>{t.services7}</p>
+                        <Link href="#callback" className={styles.itemBtn}>{t.servicesBtn}</Link>
+                    </div>
+                    <div className={styles.item}>
+                        <p className={styles.itemTitle}>{t.services8}</p>
+                        <Link href="#callback" className={styles.itemBtn}>{t.servicesBtn}</Link>
+                    </div>
+                    <div className={styles.item}>
+                        <p className={styles.itemTitle}>{t.services9}</p>
+                        <Link href="#callback" className={styles.itemBtn}>{t.servicesBtn}</Link>
+                    </div>
+                </div>
             </div>
         </section>
     )

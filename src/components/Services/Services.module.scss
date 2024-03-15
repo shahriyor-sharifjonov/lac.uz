@@ -1,3 +1,88 @@
+@import "@/styles/mixins.scss";
 .services{
-    
+    position: relative;
+    isolation: isolate;
+    @include res("padding-top", 85px);
+    @include media(575){
+        @include resa("padding-top", 85px);
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 50%;
+        background: rgba(#FFA800, .42);
+        filter: blur(30vw);
+        z-index: -1;
+        @include res("filter", 300px);
+        @include res("left", -250px);
+        @include res("width", 500px);
+        @include res("height", 500px);
+        @include media(575){
+            @include resa("left", -250px);
+            @include resa("width", 500px);
+            @include resa("height", 500px);
+            filter: blur(80vw);
+        }
+    }
+}
+.title{
+    @include res("margin-bottom", 40px);
+    @include media(575){
+        @include resa("margin-bottom", 20px);
+    }
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    @include res("gap", 20px);
+    @include media(575){
+        @include resa("gap", 20px);
+    }
+}
+.item{
+    border: solid #fff;
+    background: rgba(#fff, 0.1);
+    backdrop-filter: blur(16px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include res("gap", 60px);
+    @include res("padding", 40px);
+    @include res("border-width", 1px);
+    @include media(575){
+        flex-direction: column;
+        align-items: flex-start;
+        @include resa("gap", 15px);
+        @include resa("padding", 15px);
+        @include resa("border-width", 1px);
+    }
+    &Title{
+        color: #fff;
+        font-weight: 500;
+        @include res("font-size", 24px);
+        line-height: 140%;
+        @include media(575){
+            @include resa("font-size", 20px);
+        }
+    }
+    &Btn{
+        background: #FFA800;
+        color: #fff;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        @include res("font-size", 20px);
+        @include res("height", 60px);
+        @include res("width", 224px);
+        @include res("min-width", 224px);
+        @include media(575){
+            width: 100%;
+            @include resa("font-size", 18px);
+            @include resa("height", 50px);
+        }
+    }
 }

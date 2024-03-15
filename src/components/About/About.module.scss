@@ -6,6 +6,9 @@
     isolation: isolate;
     width: 100%;
     max-width: 100%;
+    @include media(575){
+        @include resa("padding-top", 100px);
+    }
     &::before{
         content: '';
         position: absolute;
@@ -25,9 +28,6 @@
             @include resa("height", 500px);
             filter: blur(80vw);
         }
-    }
-    @include media(575){
-        @include resa("padding-top", 100px);
     }
 }
 .title{

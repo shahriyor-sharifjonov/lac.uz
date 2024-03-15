@@ -5,6 +5,7 @@ import Header from "@/components/Header/Header";
 import Intro from "@/components/Intro/Intro";
 import About from "@/components/About/About";
 import Footer from "@/components/Footer/Footer";
+import Services from "@/components/Services/Services";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <Header />
         <Intro />
         <About />
+        <Services />
         <Footer />
       </main>
     </>
