@@ -12,7 +12,7 @@ import Link from 'next/link'
 const Footer = () => {
     const router = useRouter()
     const { locale } = router
-    const t = locale === 'ru' ? ru : (locale === 'uz' ? uz : en);
+    const t = locale === 'ru' ? ru : (locale === 'uz' ? uz : en)
     
     return (
         <footer className={styles.footer}>
