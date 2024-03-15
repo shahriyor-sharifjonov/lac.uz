@@ -4,6 +4,7 @@ import styles from "@/styles/Home.module.scss";
 import Header from "@/components/Header/Header";
 import Intro from "@/components/Intro/Intro";
 import About from "@/components/About/About";
+import Footer from "@/components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <Header />
         <Intro />
         <About />
+        <Footer />
       </main>
     </>
   );

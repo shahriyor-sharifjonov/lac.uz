@@ -1,0 +1,7 @@
+@import "@/styles/mixins.scss";
+.footer{
+    @include res("padding-top", 180px);
+    @include media(575){
+        @include resa("padding-top", 70px);
+    }
+}

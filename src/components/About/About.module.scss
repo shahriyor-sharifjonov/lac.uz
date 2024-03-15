@@ -4,6 +4,9 @@
     @include res("padding-top", 85px);
     position: relative;
     isolation: isolate;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
     &::before{
         content: '';
         position: absolute;
@@ -21,7 +24,7 @@
             @include resa("right", -250px);
             @include resa("width", 500px);
             @include resa("height", 500px);
-            filter: blur(70vw);
+            filter: blur(80vw);
         }
     }
     @include media(575){

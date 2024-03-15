@@ -11,14 +11,14 @@ const About = () => {
     const router = useRouter()
     const { locale } = router
     const t = locale === 'ru' ? ru : (locale === 'uz' ? uz : en);
-  return (
-    <section className={styles.about}>
-        <div className={`${styles.container} container`}>
-            <h2 className={`${styles.title} title`} dangerouslySetInnerHTML={{ __html: t.aboutTitle }}></h2>
-            <p className={styles.p}>{t.aboutText}</p>
-        </div>
-    </section>
-  )
+    return (
+        <section className={styles.about}>
+            <div className={`${styles.container} container`}>
+                <h2 className={`${styles.title} title`} dangerouslySetInnerHTML={{ __html: t.aboutTitle }}></h2>
+                <p className={styles.p}>{t.aboutText}</p>
+            </div>
+        </section>
+    )
 }
 
 export default About
