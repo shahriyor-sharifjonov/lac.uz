@@ -1,0 +1,37 @@
+@import "@/styles/mixins.scss";
+.about{
+    color: #fff;
+    @include res("padding-top", 85px);
+    position: relative;
+    isolation: isolate;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 50%;
+        background: rgba(#FFA800, .42);
+        filter: blur(30vw);
+        @include res("filter", 300px);
+        @include res("right", -250px);
+        @include res("width", 500px);
+        @include res("height", 500px);
+    }
+    @include media(575){
+        @include resa("padding-top", 100px);
+    }
+}
+.title{
+    @include res("margin-bottom", 40px);
+    @include media(575){
+        @include resa("margin-bottom", 20px);
+    }
+}
+.p{
+    color: #fff;
+    @include res("font-size", 24px);
+    line-height: 140%;
+    @include media(575){
+        @include resa("font-size", 18px);
+    }
+}

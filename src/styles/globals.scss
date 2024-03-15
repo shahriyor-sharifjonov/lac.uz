@@ -43,3 +43,14 @@ main{
 button{
   cursor: pointer;
 }
+.title{
+  @include res("font-size", 56px);
+  font-weight: 500;
+  color: #fff;
+  @include media(575){
+    @include resa("font-size", 36px);
+  }
+  span{
+    color: #FFA800;
+  }
+}
