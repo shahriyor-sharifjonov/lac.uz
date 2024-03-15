@@ -1,10 +1,10 @@
 @import "@/styles/mixins.scss";
 .footer{
-    @include res("padding-top", 180px);
+    @include res("padding-top", 85px);
     @include res("padding-bottom", 48px);
     position: relative;
     @include media(575){
-        @include resa("padding-top", 70px);
+        @include resa("padding-top", 85px);
         @include resa("padding-bottom", 50px);
     }
 }
