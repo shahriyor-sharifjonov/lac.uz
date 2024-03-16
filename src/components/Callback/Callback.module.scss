@@ -1,0 +1,152 @@
+@import "@/styles/mixins.scss";
+.callback{
+    @include res("padding-top", 85px);
+    position: relative;
+    color: #fff;
+    @include media(575){
+        @include resa("padding-top", 85px);
+    }
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title{
+    text-align: center;
+    @include res("margin-bottom", 40px);
+    @include media(575){
+        @include resa("margin-bottom", 25px);
+        text-align: left;
+    }
+}
+.form{
+    @include res("width", 800px);
+    @include res("gap", 30px);
+    display: flex;
+    flex-direction: column;
+    @include media(575){
+        width: 100%;
+        @include resa("gap", 20px);
+    }
+}
+.input{
+    border: solid #fff;
+    background: rgba(#fff, 0.1);
+    backdrop-filter: blur(16px);
+    @include res("border-width", 1px);
+    @include res("height", 80px);
+    @include res("padding-left", 26px);
+    @include res("padding-right", 26px);
+    @include res("font-size", 24px);
+    font-weight: 500;
+    color: #fff;
+    @include media(575){
+        @include resa("border-width", 1px);
+        @include resa("height", 60px);
+        @include resa("padding-left", 15px);
+        @include resa("padding-right", 15px);
+        @include resa("font-size", 18px);
+    }
+}
+.btn{
+    background: #FFA800;
+    color: #fff;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    @include res("font-size", 24px);
+    @include res("height", 80px);
+    width: 100%;
+    border: none;
+    @include media(575){
+        @include resa("font-size", 18px);
+        @include resa("height", 50px);
+    }
+}
+.req{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    @include res("gap", 12px);
+    @include media(575){
+        @include resa("gap", 12px);
+    }
+    label{
+        cursor: pointer;
+        @include res("font-size", 24px);
+        font-weight: 400;
+        @include media(575){
+            @include resa("font-size", 20px);
+        }
+    }
+}
+.chk{
+    position: relative;
+    cursor: pointer;
+    @include res("width", 30px);
+    @include res("min-width", 30px);
+    @include res("height", 30px);
+    @include media(575){
+        @include resa("width", 25px);
+        @include resa("min-width", 25px);
+        @include resa("height", 25px);
+    }
+    input{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        &:checked~div{
+            &::before{
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+    div{
+        width: 100%;
+        height: 100%;
+        border: solid #fff;
+        background: rgba(#fff, 0.1);
+        backdrop-filter: blur(16px);
+        position: relative;
+        @include res("border-width", 1px);
+        @include media(575){
+            @include resa("border-width", 1px);
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            background: #fff;
+            @include res("top", 4px);
+            @include res("left", 4px);
+            @include res("width", 19px);
+            @include res("height", 19px);
+            opacity: 0;
+            visibility: hidden;
+            transition: 300ms ease;
+            @include media(575){
+                @include resa("top", 4px);
+                @include resa("left", 4px);
+                @include resa("width", 14px);
+                @include resa("height", 14px);
+            }
+        }
+    }
+}
+.p{
+    display: none;
+    @include res("font-size", 24px);
+    text-align: center;
+    @include media(575){
+        @include resa("font-size", 18px);
+    }
+    &.active{
+        display: block;
+    }
+}

@@ -7,6 +7,7 @@ import About from "@/components/About/About";
 import Footer from "@/components/Footer/Footer";
 import Services from "@/components/Services/Services";
 import Contacts from "@/components/Contacts/Contacts";
+import Callback from "@/components/Callback/Callback";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <Intro />
         <About />
         <Services />
+        <Callback />
         <Contacts />
         <Footer />
       </main>

@@ -22,7 +22,12 @@ const uz = {
     "services9": "Kompleks soliq va auditrlik qo‘llab-quvvat",
     "contactsTitle": "<span>Kontaktlar</span>",
     "contactsBtn": "Yandex navigatorda ochish",
-    "contactsLoc": "Алишера Навои 14"
+    "contactsLoc": "Алишера Навои 14",
+    "callbackTitle": "Savollaringiz qoldimi?<br><span>Ariza qoldiring</span>",
+    "callbackName": "FIO",
+    "callbackReq": "Foydalanuvchi shartnomasining shartlarini qabul qilaman",
+    "callbackBtn": "Yuborish",
+    "callbackText": "So‘rov uchun rahmat. Tez orada siz bilan bog‘lanamiz."
 }
 
 export default uz

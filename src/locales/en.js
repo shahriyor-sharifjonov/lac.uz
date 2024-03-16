@@ -22,7 +22,12 @@ const en = {
     "services9": "Comprehensive tax and audit support",
     "contactsTitle": "<span>Contacts</span>",
     "contactsBtn": "Open in Yandex navigator",
-    "contactsLoc": "Alisher Navoiy 14"
+    "contactsLoc": "Alisher Navoiy 14",
+    "callbackTitle": "Have questions?<br><span>Submit Request</span>",
+    "callbackName": "Full Name",
+    "callbackReq": "I accept the terms of the user agreement",
+    "callbackBtn": "Send",
+    "callbackText": "Thank you for your request. We will contact you shortly."
 }
 
 export default en

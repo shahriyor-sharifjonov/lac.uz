@@ -22,7 +22,12 @@ const ru = {
     "services9": "Комплексное налоговое и аудиторское сопровождение",
     "contactsTitle": "<span>Контакты</span>",
     "contactsBtn": "Открыть в Яндекс навигаторе",
-    "contactsLoc": "Алишера Навои 14"
+    "contactsLoc": "Алишера Навои 14",
+    "callbackTitle": "Остались вопросы?<br><span>Оставить Заявку</span>",
+    "callbackName": "ФИО",
+    "callbackReq": "Я принимаю условия пользовательского соглашения",
+    "callbackBtn": "Отправить",
+    "callbackText": "Спасибо за заявку. Мы свяжемся с вами в ближайшее время"
 }
 
 export default ru

@@ -10,7 +10,7 @@ import styles from './About.module.scss'
 const About = () => {
     const router = useRouter()
     const { locale } = router
-    const t = locale === 'ru' ? ru : (locale === 'uz' ? uz : en);
+    const t = locale === 'ru' ? ru : (locale === 'uz' ? uz : en)
     return (
         <section className={styles.about} id="about">
             <div className={`${styles.container} container`}>
