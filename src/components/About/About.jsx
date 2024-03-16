@@ -15,7 +15,7 @@ const About = () => {
         <section className={styles.about} id="about">
             <div className={`${styles.container} container`}>
                 <h2 className={`${styles.title} title`} dangerouslySetInnerHTML={{ __html: t.aboutTitle }}></h2>
-                <p className={styles.p}>{t.aboutText}</p>
+                <p className={styles.p}>&nbsp;&nbsp;&nbsp;{t.aboutText}</p>
             </div>
         </section>
     )

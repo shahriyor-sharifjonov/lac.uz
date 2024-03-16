@@ -40,6 +40,7 @@
     color: #fff;
     @include res("font-size", 24px);
     line-height: 140%;
+    text-align: justify;
     @include media(575){
         @include resa("font-size", 18px);
     }
